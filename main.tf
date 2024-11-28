@@ -2,7 +2,7 @@ module "webserver" {
     source                       = "./ec2"
     ami_id                       = "ami-04a81a99f5ec58529"
     instance_type                = "t2.micro"
-    availability_zone            = "us-east-1"
+    availability_zone            = "us-east-1a"
     tags                         = { "Name" : "Webserver"}
     security_group_name          = "Webserver_Sg"
     security_description         = "Allow SSH, HTTP & HTTPS Ports"
